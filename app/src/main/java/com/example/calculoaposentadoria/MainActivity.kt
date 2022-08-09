@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -28,10 +29,10 @@ class MainActivity : AppCompatActivity() {
 
             var resultado = 0
 
-            if (sexo == "masculino"){
-                resultado = 65 - idade
+            resultado = if (sexo == "masculino"){
+                65 - idade
             }else{
-                resultado = 60 - idade
+                60 - idade
             }
 
             txtResultado.text = "Faltam $resultado anos para você se aposentar."
