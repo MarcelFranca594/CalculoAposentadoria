@@ -9,20 +9,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcule quanto tempo falta para sua aposentadoria!"
+        android:textStyle="bold"
         android:gravity="center_horizontal"
         android:textSize="16sp"
         android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escolha o sexo:"/>
+        android:text="Escolha o sexo:" />
+
     <Spinner
         android:id="@+id/spn_sexo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp">
     </Spinner>
 
     <TextView
@@ -35,7 +42,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:maxLength="2"/>
+        android:maxLength="2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/btn_calcular"
@@ -47,6 +58,10 @@
     <TextView
         android:id="@+id/txt_resultado"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"/>
 
 </LinearLayout>
